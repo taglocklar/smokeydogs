@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a4a66c7.css",
+    "main.js": "/static/js/main.24b8723a.js",
+    "static/js/453.068c502b.chunk.js": "/static/js/453.068c502b.chunk.js",
+    "static/media/smokingdog.jpg": "/static/media/smokingdog.c30a0c4b66b21d9e5b98.jpg",
+    "static/media/smokeydogsbackground.jpg": "/static/media/smokeydogsbackground.38f4c78d9925790b43bb.jpg",
+    "index.html": "/index.html",
+    "main.1a4a66c7.css.map": "/static/css/main.1a4a66c7.css.map",
+    "main.24b8723a.js.map": "/static/js/main.24b8723a.js.map",
+    "453.068c502b.chunk.js.map": "/static/js/453.068c502b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a4a66c7.css",
+    "static/js/main.24b8723a.js"
+  ]
+}
