@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  .App {
+    text-align: left;
+  }
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -10,15 +16,56 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .App-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 40px;
+  }
+  
+  .App-header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+}
+
+.Hero-card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  padding: 30px;
+  border-radius: 24px;
+  margin: 20px 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 769px) {
+  .Hero-card {
+    max-width: 600px;
+    margin: 30px 0;
+  }
 }
 
 .Team-image {
   max-width: 100%;
-  width: 500px;
-  margin: 20px 0;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+}
+
+@media (min-width: 769px) {
+  .Team-image {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -27,22 +74,56 @@
   }
 }
 
-.Team-image:hover {
-  transform: scale(1.05);
+
+
+.Slogan {
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 1.3em;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
 }
 
-.Mission-statement p {
-  padding: 10px;
+@media (min-width: 769px) {
+  .Slogan {
+    font-size: 1.4em;
+    text-align: left;
+  }
 }
 
 .Roster {
-  margin-top: 20px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  padding: 30px;
+  border-radius: 24px;
+  margin: 20px 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
-.Roster h2 {
-  margin-bottom: 10px;
-  cursor: pointer;
+@media (min-width: 769px) {
+  .Roster {
+    max-width: 500px;
+    margin: 20px 0;
+  }
 }
+
+
+
+.Roster h2 {
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
 
 .Roster h2::after {
   content: '▶';
@@ -78,29 +159,16 @@
   color: #000000;
   text-decoration: none;
   display: inline-block;
-  padding: 10px 15px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-shadow: none;
+  font-weight: 500;
+  border: 2px solid transparent;
 }
 
-.Roster a:hover {
-  text-decoration: none;
-  font-size: 1.1em;
-  background-color: #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-@keyframes fall {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(100vh);
-  }
-}
 
-@keyframes sway {
-  0% { transform: translateX(-15px); }
-  100% { transform: translateX(15px); }
-}
+
+
